@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="mb-5 text-center">{{ question.question_text }}</h1>
+ <h3> &nbsp&nbsp&nbsp Oyunuz alınmıştır. Teşekkür ederiz.</h3>
+<br><br><br>
+<a class="btn btn-secondary" href="{% url 'polls:index' %}">Anketlere Geri Dön</a>
+
+{% endblock %}
